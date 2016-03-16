@@ -1,0 +1,38 @@
+2016-03-08 23:40:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DATABASECHANGELOGLOCK" not found; SQL statement:
+select count(*) from DATABASECHANGELOGLOCK [42102-191]
+2016-03-08 23:40:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DATABASECHANGELOGLOCK" not found; SQL statement:
+select count(*) from DATABASECHANGELOGLOCK [42102-191]
+2016-03-08 23:40:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DATABASECHANGELOGLOCK" not found; SQL statement:
+select count(*) from DATABASECHANGELOGLOCK [42102-191]
+2016-03-08 23:40:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER" not found; SQL statement:
+CREATE TABLE address(
+  id_address INT PRIMARY KEY,
+  id_user INT,
+  address VARCHAR(255),
+  CONSTRAINT FK_USER_IDUSER FOREIGN KEY (id_user) REFERENCES user (id_user)
+) [42102-191]
+2016-03-08 23:40:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DATABASECHANGELOGLOCK" not found; SQL statement:
+select count(*) from DATABASECHANGELOGLOCK [42102-191]
+2016-03-08 23:40:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DATABASECHANGELOGLOCK" not found; SQL statement:
+select count(*) from DATABASECHANGELOGLOCK [42102-191]
+2016-03-08 23:41:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO users ( name ) VALUES ( 'Bernasconi', 'Janus', 'Artus', 'Pektus', 'Saktus' ) [21002-191]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:126)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:115)
+	at Main.main(Main.java:17)
